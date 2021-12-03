@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;">
+
+<h2 align="middle"></h2> 
+
+<p align='middle'>{{result}}</p>
+<form action="/submit2" method='post' align="middle">
+
+
+    <label for="temp">Temperature</label><br>
+    <input type="text" id="temp" name="temp"><br><br>
+  
+    <label for="humid">Humidity</label><br>
+    <input type="text" id="humid" name="humid"><br><br>
+
+  
+  
+    <label for="moisture">Moisture:</label><br>
+    <input type="text" id="moisture" name="moisture"><br><br>
+  
+    <label for="sp">Soil Type:</label><br>
+    <input type="text" id="sp" name="sp"><br><br>
+  
+    <label for="cp">Crop Type:</label><br>
+    <input type="text" id="cp" name="cp"><br><br>
+
+    <button action= "{{url_for('fertilizer')}}" name="Predict" value="Predict"> Predict Fertilizer </button>
+
+  
+  </form> 
+
+ 
+  
+
+</body>
+</html>
